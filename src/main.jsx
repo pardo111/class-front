@@ -1,8 +1,6 @@
-import { StrictMode } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import Navbar from './components/Navbar.jsx'
 import { HelmetProvider } from "react-helmet-async";
 import { AuthProvider } from './AuthProvider.jsx'
@@ -20,10 +18,10 @@ createRoot(document.getElementById('root')).render(
       <HelmetProvider>
         <Routes>
           <Route path="/login" element={<Login />}></Route>
-          <Route path='/signup-1' element={<SignUp/>}></Route>
+          <Route path='/signup-1' element={<SignUp />}></Route>
         </Routes>
       </HelmetProvider>
-<Footer></Footer>
+      <Footer></Footer>
 
     </BrowserRouter>
   </AuthProvider>

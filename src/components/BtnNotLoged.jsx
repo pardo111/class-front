@@ -5,7 +5,6 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 export default function BtnNotLoged() {
     const location = useLocation();
-    console.log(location.pathname)
     return (<>
         <ul className="flex flex-row gap-6" >
         <li className="hover:scale-105 transition duration-300  active:scale-100">

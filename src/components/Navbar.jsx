@@ -9,8 +9,8 @@ export default function Navbar() {
 
     const { user } = useAuth();
     return (
-        <nav className="bg-gray-800 shadow-sm sticky top w-screen ">
-            <div className="max-w-screen-xl flex items-center justify-center md:justify-between p-4 mx-auto">
+        <nav className="bg-gray-800 shadow-sm sticky top-0 w-screen ">
+            <div className="max-w-screen-xl flex items-center justify-center lg:justify-between p-4 mx-auto">
                 {/* Logo */}
 
 

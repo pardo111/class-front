@@ -11,7 +11,7 @@ export default function Footer() {
 
 
     return (
-<footer className="bg-white w-screen  fixed bottom-0 p-6 shadow-sm m-4 dark:bg-gray-800">
+<footer className="bg-white w-screen   p-6 shadow-sm m-4 dark:bg-gray-800">
     <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="hover:underline">PardInc</a>. No Rights Reserved.
     </span>
