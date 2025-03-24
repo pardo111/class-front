@@ -9,7 +9,7 @@ export default function BtnLoged() {
  
     return (<>
         <ul className="flex flex-row gap-6" >
-            <li className="hover:scale-110 transition duration-300  active:scale-100">
+            <li className="hover:scale-105 transition duration-300  active:scale-100">
 
                 <NavLink
                     to="/profile"
@@ -17,7 +17,7 @@ export default function BtnLoged() {
                     <i className="fa-solid fa-user text-xl pr-2"></i><p className="hidden md:inline">Perfil</p>
                 </NavLink>
             </li>
-            <li className="hover:scale-110 transition duration-300  active:scale-100">
+            <li className="hover:scale-105 transition duration-300  active:scale-100">
 
                 <NavLink
                     to="/home"
@@ -26,7 +26,7 @@ export default function BtnLoged() {
                     <p className="hidden  md:inline">Home</p>
                 </NavLink>
             </li>
-            <li className="hover:scale-110 transition duration-300  active:scale-100">
+            <li className="hover:scale-105 transition duration-300  active:scale-100">
 
                 <NavLink
                     to="/mySubjects"
@@ -35,7 +35,7 @@ export default function BtnLoged() {
                     <p className="hidden  md:inline">My Class</p>
                 </NavLink>
             </li>
-            <li className="hover:scale-110 transition duration-300  active:scale-100">
+            <li className="hover:scale-105 transition duration-300  active:scale-100">
 
                 <NavLink
                     to="/Settings"

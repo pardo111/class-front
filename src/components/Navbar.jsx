@@ -6,15 +6,10 @@ import BtnLoged from "./BtnLoged";
 
 export default function Navbar() {
 
-    const userLenguage = navigator.language || navigator.userLanguage;
-    console.log("lenguage:",userLenguage);
-
-    const languageNav= document.getElementById('language');
-    console.log(languageNav);
 
     const { user } = useAuth();
     return (
-        <nav className="bg-[#003062] shadow-sm fixed top w-screen">
+        <nav className="bg-gray-800 shadow-sm sticky top w-screen ">
             <div className="max-w-screen-xl flex items-center justify-center md:justify-between p-4 mx-auto">
                 {/* Logo */}
 
