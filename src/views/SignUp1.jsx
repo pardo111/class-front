@@ -20,13 +20,12 @@ export default function SignUp() {
             [e.target.name]: e.target.value,
         });
     };
-
+    const regex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$/;
     const sendData = async (e) => {
         e.preventDefault();
 
         if (data['password'] !== data['password_confirmation']) {
-            console.log("error");
-            Swal.fire({
+             Swal.fire({
                title: 'Error!',
                text: 'the passwords dont match',
                icon: 'error',
@@ -34,8 +33,14 @@ export default function SignUp() {
              });
              return;
 
-        }else if (condition) {
-            
+        }else if ( !regex.test(data['password']) || data['password'].length<8) {
+            Swal.fire({
+                title: 'Error!',
+                text: 'the passwords dont need spaces, needs letters and number, and min length 8',
+                icon: 'error',
+                confirmButtonText: 'Cool'
+              });
+              return; 
         }else
         {
             console.log("Enviando datos:", data);
